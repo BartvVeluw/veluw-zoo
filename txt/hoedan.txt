@@ -1,0 +1,18 @@
+de nog een keer button moet worden veranderd als je op de spelregels klikt (dus de pauze state)
+
+bij het veranderen van de tijd EN moeilijkheidsgraad, word de keuze in de localstorage geplaatst. 
+bij het opstarten van het spel kijkt js eerst in LS
+Als er niks in localstorage staat, word het spel op default gezet. 
+
+
+
+dus hoe moet de app worden opgebouwd:
+
+de DOM kijkt naar de localstorage en kijkt wat de speler heeft ingevoerd.
+Als de speler nog niks heeft ingevoerd, is er een default.
+er komt dus een if else statement
+in deze statement staan de verschillende functies die worden aangeroepen.
+
+functie voor het aantal kaarten dat word neergezet
+functie voor de tijd
+functie voor de moeilijkheidsgraad

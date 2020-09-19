@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'wigwag', sans-serif;
+  color: #1a3200;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+
+
+main{
+  width: 80%;
+  margin: auto;
+}
+
+h1{
+  font-family: 'wigwag-deluxe', sans-serif;
+  text-align: center;
+}
+
+#fotoText{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#foto img{
+  border: 3px solid #1a3200;
+  background-color: #1a3200;
+}
+
+#rechts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#info{
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+p{
+  color: black;
+}
+
+#arrowRight{
+  width: 50px;
+  transform: rotate(90deg);
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 50px 50px 0;
+  cursor: pointer;
+}
+
+#arrowLeft{
+  transform: rotate(270deg);
+  width: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 0px 50px 50px;
+}
+
+@media(max-width: 1300px){
+  main{
+    width: 100%;
+  }
+
+  #rechts{
+    align-items: flex-end;
+  }
+}
+
+@media(max-width: 1150px){
+  #fotoText{
+    flex-direction: column;
+    align-items: center;
+  }
+  #rechts{
+    align-items: center;
+  }
+
+  @media(max-width: 700px){
+    #info{
+      width: 80%;
+    }
+
+    #foto{
+      text-align: center;
+    }
+
+    img{
+      width: 80%;
+      
+    }
+  }
+}

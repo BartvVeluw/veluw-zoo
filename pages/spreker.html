@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/wey8qxe.css">
+  <link rel="stylesheet" href="../css/animalSpeak.css">
+  <title>Animal Speaker</title>
+</head>
+<body>
+
+<!-- <div id="nextPage">
+  <img src="images/icons/logo.svg">
+</div> -->
+
+<div id="container">
+
+  <h1>Dieren Spreker</h1>
+  <div id="inputs">    
+    <button id="filter" class="filter">Filter</button>
+    <label for="taal">Zoek dier:</label>
+    <input type="text" id="search" class="search" placeholder="Zoek Dier...">
+  </div>
+
+  <div id="toggleMenu">
+    <h2 id="menuGone">X</h2>
+    <label for="taal">Selecteer Taal:</label>
+    <select name="taal" id="taal"></select>
+
+    <div id="dierSoort" class="toggleMenuItems">
+      <label for="dierSoort">Soort:</label>
+      <select name="diersoort" id="selectSoort">
+        <option value="Alle">Alle</option>
+        <option value="Vogel">Vogel</option>
+        <option value="Amfibie">Amfibie</option>
+        <option value="Zoogdier">Zoogdier</option>
+        <option value="Vis">Vis</option>
+        <option value="Reptiel">Reptiel</option>
+        <option value="Insect">Insect</option>
+      </select>
+    </div>
+
+    <div id="herkomstPics">
+      <h2>Herkomst:</h2>
+      <div id="continentenDiv">
+
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="Alle" checked>
+        <img src="../images/continenten/wereld.svg">
+        <p>Alle</p>
+      </label>
+
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="Europa">
+        <img src="../images/continenten/europa.svg">
+        <p>Europa</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="Amerika">
+        <img src="../images/continenten/amerika.svg">
+        <p>Amerika</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="noordAmerika">
+        <img src="../images/continenten/noordamerika.svg">
+        <p>Noord Amerika</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="middenAmerika">
+        <img src="../images/continenten/centraalamerika.svg">
+        <p>Centraal Amerika</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="zuidAmerika">
+        <img src="../images/continenten/zuidamerika.svg">
+        <p>Zuid Amerika</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="Azië">
+        <img src="../images/continenten/azie.svg">
+        <p>Azië</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="Australië">
+        <img src="../images/continenten/australie.svg">
+        <p>Australië</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="Afrika">
+        <img src="../images/continenten/afrika.svg">
+        <p>Afrika</p>
+      </label>
+      
+      <label class="continetenLabel">
+        <input type="radio" name="continent" value="Oceaan">
+        <img src="../images/continenten/ocean.svg">
+        <p>Oceaan</p>
+      </label>
+      
+      </div>
+ 
+     </div>
+
+    </div> <!--einde toggle menu-->
+
+
+
+  <div id="emptySearch">
+    <h1>Klik op een dier..</h1>
+  </div> <!--Dynamische content-->
+
+  <main></main> <!--Dynamische content-->
+
+  <div id="arrowUp">
+    <img src="../images/icons/arrowUp.svg">
+  </div>
+
+  
+
+</div> <!--einde container-->
+  
+
+  <script src="../js/tilt.js"></script>
+  <script src="../js/dierenDatabase.js"></script>
+  <script src="../js/cards.js"></script>
+</body>
+</html>

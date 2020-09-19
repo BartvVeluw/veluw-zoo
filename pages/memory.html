@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/wey8qxe.css">
+  <link rel="stylesheet" href="../css/memory.css">
+  <title>Memory</title>
+</head>
+<body>
+  
+
+  <main>
+    <section id="timer">
+      <h2>Tijd: <span id="timerSpan">uit</span></h2>
+      <h2><span id="scoreSpan">Score: </span></h2>
+    </section>
+    <section class="memory-game"></section>
+
+  </main>
+
+
+  <section id="gameOver" class="gone">
+    <h1 id="gelukt"></h1>
+    <h2 id="score"></h2>
+    <button id="playAgain">Nog een keer!</button>
+  </section>
+
+  <button id="spelRegels">Spelregels</button>
+
+  <section id="regels">
+    <h2>De spelregels:</h2>
+    <p>Klik op een kaart. Klik vervolgens op nog een kaart en kijk of ze hetzelfde zijn. Zijn ze hetzelfde? Dan heb je een punt. Zijn ze niet hetzelfde? Onthoud dan de kaarten en zoek naar de goede.</p>
+
+    <label for="opties">Opties:</label>
+    <h3>Moeilijkheidsgraad: </h3>
+    <select name="opties" id="opties">
+      <option value="keuze">Maak een keuze</option>
+      <option value="heelMakkelijk">Heel Makkelijk</option>
+      <option value="makkelijk">Makkelijk</option>
+      <option value="Gemiddeld">Gemiddeld</option>
+      <option value="moeilijk">Moeilijk</option>
+      <option value="heelMoeilijk">Heel Moeilijk</option>
+    </select>
+
+    <h3>Tijd:</h3>
+    <select name="tijd" id="tijd">
+      <option value="kies">Kies tijd</option>
+      <option value="aan">Aan</option>
+      <option value="uit">Uit</option>
+    </select>
+
+    <button id="oke">Bedankt!</button>
+  </section>
+
+  <script src="../js/dierenDatabase.js"></script>
+  <script src="../js/memory.js"></script>
+</body>
+</html>

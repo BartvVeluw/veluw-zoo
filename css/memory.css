@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'wigwag-deluxe', sans-serif;
+  color: #1a3200;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+}
+
+main{
+  width: 80%;
+  margin: auto;
+}
+
+.memory-game{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.memory-card{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 10px;
+  
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card:active{
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.front,
+.back{
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front{
+  transform: rotateY(180deg);
+}
+
+.memory-card.flip{
+  transform: rotateY(180deg);
+}
+
+#gameOver{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255,214,130,1) 0%, rgba(26,50,0,0.773546918767507) 70%);
+}
+
+#gameOver.gone{
+  display: none;
+}
+
+#playAgain{
+  font-family: 'wigwag', sans-serif;
+  font-size: 40px;
+  color: #1a3200;
+  background-color: #ffd682;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#playAgain:focus{
+  outline: none;
+}
+
+#playAgain:hover{
+  transform: scale(1.1);
+}
+
+#regels{
+  position: absolute;
+  width: 400px;
+  top: 0;
+  left: 0;
+  background-color: #ffd682;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px ridge #1a3200;
+  transform: translateX(-400px);
+  transition: transform 0.8s ease-in-out;
+}
+
+#regels.terug{
+  transform: translateX(0);
+}
+
+#regels p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#regels label{
+  font-size: 28px;
+}
+
+#regels h3{
+  margin: 10px 0;
+}
+
+#regels select{
+  width: 200px;
+  height: 40px;
+  font-family: 'wigwag', sans-serif;
+  color: #1a3200;
+  background-color: #ffd682;
+  border: 2px solid #1a3200;
+  margin-bottom: 10px;
+}
+
+#regels #oke{
+  margin-top: 20px;
+  font-family: 'wigwag', sans-serif;
+  font-size: 40px;
+  color: #ffd682;
+  background-color: #1a3200;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#oke:focus{
+  outline: none;
+}
+
+#oke:hover{
+  transform: scale(1.1);
+}
+
+
+#spelRegels{
+  position: absolute;
+  font-family: 'wigwag', sans-serif;
+  font-size: 40px;
+  color: #1a3200;
+  background-color: #ffd682;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border: 2px ridge #1a3200;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+#spelRegels:focus{
+  outline: none;
+}
+
+#spelRegels:hover{
+  transform: scale(1.1);
+}
+
+#timer{
+  text-align: center;
+}
+
